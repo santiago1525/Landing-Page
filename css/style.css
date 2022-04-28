@@ -1,0 +1,251 @@
+:root {
+    --Primario: #fff;
+    --Secundario: #000;
+    --Terciario: #C3DC00;
+}
+
+html {
+    scroll-behavior: smooth;
+   /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
+   para probar la diferencia con y sin scroll suavizado*/
+}
+
+/* ICONOS */
+
+.i {
+    font-size: 22px;
+}
+
+/* TOAST */
+.text-toast_err {
+    color: rgb(233, 68, 68);
+}
+.text-toast_correct {
+    color: rgb(21, 205, 18);
+}
+
+/* DIVIDER */
+.b-example-divider {
+    min-height: 2rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+}
+.h-3{
+    height: 3.5rem ;
+}
+
+/* NAVBAR */
+
+.navbar {
+    position: fixed !important;
+    width: 100%;
+    z-index: 1000;
+}
+.container-nav {
+    padding: 0 50px !important;
+}
+
+.nav-link {
+    padding: 15px !important;
+}
+
+.navbar-button {
+    border: 2px solid #EEE!important;
+    padding: 10px 29px!important;
+    background: transparent;
+    border-radius: 25px;
+}
+
+.navbar-dark .navbar-nav .nav-link:last-child {
+    color: var(--Terciario) !important;
+}
+
+
+@media (max-width: 1000px ) {
+    .container-nav {
+        padding: 0 10px !important;
+    }
+    .navbar-button {
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+}
+
+/* HERO */
+.hero-img {
+    background-image: url(/images/banner2.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-hero, .p-hero {
+    color: var(--Primario) !important;
+}
+.text-hero {
+    font-size: 2rem !important;
+    padding-bottom: 1.5rem;
+}
+.p-hero {
+    margin-bottom: 3rem;
+    font-size: 1.5rem !important;
+}
+@media (min-width: 768px) {
+    .text-hero {
+        font-size: 5rem !important;
+    }
+}
+@media (min-width: 1000px) {
+    .p-hero {
+        margin-bottom: 0;
+    }
+    .text-hero {
+        padding-bottom: 0;
+    }
+}
+
+.text-hero_submit {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px !important;
+}
+
+
+/* INFO */
+.text-infor{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+/* PREMIOS */
+.heading {
+    padding-top: 40px;
+}
+.img-first {
+    max-width: 100%;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 10px;
+}
+.title-columns {
+    padding: 15px 0;
+
+}
+
+
+/* CUENTA REGRESIVA */
+
+#cuenta {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.simply-section {
+    background-color: var(--Terciario);
+    width: 120px;
+    height: 120px;
+    margin: 0 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.simply-amount {
+    display: block;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+.simply-word {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/* COLUMNAS */
+.wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button{
+    position: relative;
+    display: block;
+    color: rgb(10, 10, 10);
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid var(--Secundario);
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+  }
+  .button::before{
+    background: var(--Secundario);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  .button:hover {
+    color: var(--Primario) !important;
+
+  }
+  
+  .btn3::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  .btn3:hover::before{
+    height: 380%;
+  }
+
+
+  /* PATROCINADORES */
+.gallery-container {
+    background-color: var(--Terciario);
+}
+  .gallery {
+    background: var(--Terciario);
+  }
+  
+  .gallery-cell {
+    width: 70%;
+    height: 200px;
+    margin-right: 5px;
+    background: var(--Terciario);
+    background-image: url(/images/patrocinio-removebg-preview.png) ;
+    background-position: center center;
+    background-size: cover;
+    
+  }
+  @media (min-width: 768px) {
+      .gallery-cell {
+          height: 400px;
+      }
+  }
+
+
+
+
+  
+
+  
+
+
+
