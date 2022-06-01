@@ -1,8 +1,8 @@
 // EFECTO MAQUINA
 const typed = new Typed('.typed', {
     strings:[
-        '<i>Bienvenido al Hackathon Taxis Libres</i>',
-        '<i>Bienvenido al Hackathon Taxis Libres</i>'
+        '<i>Bienvenido al evento</i>',
+        '<i>Bienvenido al evento</i>'
     ],
     typeSpeed: 70,  // Tiempo que demora en escrbir una letra
     starDelay: 4000, // Tiempo de retraso en iniciar la animacion

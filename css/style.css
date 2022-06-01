@@ -59,7 +59,7 @@ html {
 }
 
 .navbar-dark .navbar-nav .nav-link:last-child {
-    color: var(--Terciario) !important;
+    color: var(--Primario) !important;
 }
 
 
@@ -229,7 +229,7 @@ html {
     height: 200px;
     margin-right: 5px;
     background: var(--Terciario);
-    background-image: url(/images/patrocinio-removebg-preview.png) ;
+    background-image: url(/images/Logo.png) ;
     background-position: center center;
     background-size: cover;
     
